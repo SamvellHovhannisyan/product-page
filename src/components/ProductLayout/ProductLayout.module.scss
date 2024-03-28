@@ -1,0 +1,418 @@
+.layout {
+  padding: 32px 24px;
+
+  .breadcrumbItem {
+    font-family: Gotham;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    color: #828EAD;
+  }
+
+  .product {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    .name {
+      font-family: Gotham;
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 32px;
+      text-align: left;
+      text-transform: uppercase;
+      color: #071435;
+    }
+
+    .productDetails {
+      display: flex;
+      align-items: start;
+      gap: 48px;
+
+      .imagePreview {
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        .mainImage {
+          border-radius: 24px;
+          height: 400px;
+          object-fit: cover;
+          max-height: 400px;
+        }
+
+        .sliderWithActions {
+          display: flex;
+          gap: 16px;
+          align-items: center;
+
+          .sliderBtn {
+            min-width: unset;
+            max-width: 38px;
+            padding: 8px;
+            gap: 8px;
+            border-radius: 8px;
+            background-color: #F2F6FF;
+          }
+
+          .slider {
+            display: flex;
+            align-items: center;
+            column-gap: 12px;
+            flex-wrap: nowrap;
+
+            .sliderImage {
+              width: 64px;
+              height: 64px;
+              min-width: 64px;
+              border-radius: 16px;
+              overflow: hidden;
+            }
+
+            .image {
+              width: 100%;
+              height: 100%;
+              border-radius: 16px;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+
+      .details {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+
+        .topDetails {
+          display: flex;
+          gap: 48px;
+          align-items: start;
+
+          .priceOptions {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+
+            .prices {
+              display: flex;
+              flex-direction: column;
+              gap: 24px;
+
+              .dangerText {
+                font-family: Gotham;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 16px;
+                text-align: left;
+                color: #FF3D71;
+              }
+
+              .mainPrice {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+
+                .price {
+                  font-family: Gotham;
+                  font-size: 32px;
+                  font-weight: 700;
+                  line-height: 48px;
+                  letter-spacing: 0.01em;
+                  text-align: left;
+                  color: #071435;
+                }
+
+                .discountChip {
+                  padding: 2px 8px;
+                  gap: 10px;
+                  border-radius: 4px;
+                  background-color: #FF3D71;
+                  font-family: Gotham;
+                  font-size: 16px;
+                  font-weight: 700;
+                  line-height: 20px;
+                  text-align: left;
+                  color: #FFFFFF;
+
+                  span {
+                    padding: 0;
+                  }
+                }
+              }
+            }
+
+            .packing {
+              display: flex;
+              align-items: center;
+              gap: 16px;
+
+              label {
+                margin: 0;
+
+                & > span:nth-child(2) {
+                  font-family: Gotham;
+                  font-size: 14px;
+                  font-weight: 500;
+                  line-height: 16px;
+                  text-align: left;
+                  color: #071435;
+                }
+              }
+
+              .packingChip {
+                padding: 8px;
+                gap: 10px;
+                border-radius: 8px;
+                font-family: Gotham;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 16px;
+                text-align: left;
+                background-color: #F2F5F9;
+                color: #828EAD;
+
+                span {
+                  padding: 0;
+                }
+              }
+            }
+
+            .deliveryInfo {
+              display: flex;
+              align-items: center;
+              gap: 16px;
+
+              .infoItem {
+                min-width: 115px;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+
+                .title {
+                  //styleName: Title/H6;
+                  font-family: Gotham;
+                  font-size: 14px;
+                  font-weight: 700;
+                  line-height: 16px;
+                  text-align: left;
+                  color: #071435;
+                }
+
+                .subtitle {
+                  //styleName: Subtitle/S3;
+                  font-family: Gotham;
+                  font-size: 12px;
+                  font-weight: 400;
+                  line-height: 16px;
+                  text-align: left;
+                  color: #828EAD;
+                }
+              }
+            }
+
+            .basketButtons {
+              display: flex;
+              align-items: center;
+              gap: 16px;
+
+              .basketBtn {
+                padding: 12px 24px;
+                min-width: 128px;
+                display: flex;
+                gap: 12px;
+                background-color: #1551E5;
+                text-transform: none;
+                border-radius: 8px;
+                color: #FFFFFF;
+                width: 100%;
+                min-width: 284px;
+
+                svg > path {
+                  fill: #FFFFFF;
+                }
+
+                span {
+                  margin-right: 0;
+                }
+
+                &:hover {
+                  box-shadow: 0px 12px 16px -7px #1551E570;
+                  background-color: #316CFF;
+                }
+
+                &:active {
+                  background-color: #1551E5;
+                }
+              }
+
+              .favoriteBtn {
+                border-radius: 8px;
+                background-color: #F2F6FF;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 16px 24px;
+
+                span {
+                  margin: 0;
+                }
+              }
+            }
+          }
+
+          .options {
+            display: flex;
+            flex-direction: column;
+            padding: 9px 0;
+            gap: 32px;
+
+            .title {
+              font-family: Gotham;
+              font-size: 20px;
+              font-weight: 500;
+              line-height: 20px;
+              text-align: left;
+              color: #071435;
+            }
+
+            .vendorCods {
+              display: flex;
+              flex-direction: column;
+              gap: 24px;
+
+              .line {
+                display: flex;
+                gap: 32px;
+                align-items: center;
+
+                .lineItem {
+                  display: flex;
+                  flex-direction: column;
+                  width: 100%;
+                  gap: 8px;
+
+                  .title {
+                    font-family: Gotham;
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 16px;
+                    text-align: left;
+                    color: #071435;
+                  }
+
+                  .subTitle {
+                    //styleName: Subtitle/S3;
+                    font-family: Gotham;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 16px;
+                    text-align: left;
+                    color: #828EAD;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .description {
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+
+          .title {
+            font-family: Gotham;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 28px;
+            text-align: left;
+            color: #071435;
+          }
+
+          .longText {
+            font-family: Gotham;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28px;
+            text-align: left;
+            color: #071435;
+          }
+        }
+      }
+    }
+  }
+
+  .breadcrumbs {
+    margin-bottom: 24px;
+
+    ol {
+      gap: 4px;
+
+      li[aria-hidden="true"] {
+        //styleName: Subtitle/S3;
+        font-family: Gotham;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        text-align: left;
+        color: #828EAD;
+      }
+    }
+  }
+}
+
+.indiana-scroll-container {
+  border-radius: 16px !important;
+}
+
+.inputIcon {;
+  font-size: 32px !important;
+  color: #071435;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.countInput {
+  width: 100%;
+  max-height: 48px;
+  border-radius: 8px !important;
+  border: 1px solid #E2E4F0;
+
+  .inputText {
+    gap: 12px;
+    cursor: pointer;
+    font-family: Gotham;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    color: #071435;
+
+  }
+
+  input {
+    padding-left: 10px;
+  }
+
+  .input_icon {
+    cursor: pointer !important;
+    height: 24px;
+    width: 24px;
+  }
+
+  & > fieldset:focus {
+    border: 2px solid #1551E5;
+    box-shadow: 0px 0px 6px 0px #BAC4E0;
+  }
+}

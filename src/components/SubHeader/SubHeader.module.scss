@@ -1,0 +1,57 @@
+.subheader {
+  padding: 20px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #E2E4F0;
+
+  .sideBlock {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    .chapterName {
+      cursor: pointer;
+      font-family: Gotham Pro;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 16px;
+      text-align: center;
+      color: #071435;
+    }
+
+    .messageBtn {
+      padding: 8px 12px;
+      text-transform: none;
+      gap: 8px;
+      border-radius: 4px;
+      background-color: #F2F6FF;
+      min-width: 159px;
+      font-family: Gotham Pro;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 16px;
+      text-align: center;
+
+      span {
+        margin: 0;
+      }
+    }
+
+    .sale {
+      cursor: pointer;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+    .text {
+      cursor: pointer;
+      font-family: Gotham Pro;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 16px;
+      text-align: center;
+      color: #1551E5;
+    }
+  }
+}

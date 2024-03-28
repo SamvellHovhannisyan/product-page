@@ -1,0 +1,180 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding: 0 24px 48px 24px;
+
+  .contactInfo {
+    display: flex;
+    justify-content: space-between;
+
+    .leftSide {
+      display: flex;
+      align-items: center;
+      gap: 48px;
+
+      .logo {
+        width: 205px;
+        margin-right: 8px;
+      }
+
+      .email {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        .title {
+          font-family: Gotham;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 20px;
+          text-align: left;
+          color: #050D23;
+        }
+
+        .subtitle {
+          font-family: Gotham;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 16px;
+          text-align: left;
+          color: #77829E;
+        }
+      }
+    }
+
+    .rightSide {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      
+      .chapterName {
+        cursor: pointer;
+        font-family: Gotham;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        text-align: center;
+        color: #071435;
+      }
+
+      .suggestIdea {
+        display: flex;
+        min-width: 148px;
+        white-space: nowrap;
+        padding: 12px 24px;
+        align-items: center;
+        font-family: Gotham;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+        text-align: center;
+        background-color: #F2F6FF;
+        border-radius: 8px;
+        gap: 12px;
+        text-transform: none;
+
+        span {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    .title {
+      //styleName: Text/TB16;
+      font-family: Gotham;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      text-align: left;
+      color: #050D23;
+    }
+
+    .columnItems {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      .item {
+        font-family: Gotham;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        text-align: left;
+        color: #050D23;
+      }
+    }
+  }
+
+  .policy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+
+    .fastActions {
+      display: flex;
+      gap: 28px;
+
+      .iconAction {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+
+        .icon {
+          height: 16px;
+          width: 16px;
+        }
+
+        .text, .textYoutube {
+          font-family: Gotham;
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 16px;
+          text-align: left;
+          color: #828EAD;
+        }
+        .textYoutube {
+          color: #1551E5;
+        }
+      }
+    }
+    .description {
+      font-family: Gotham;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 16px;
+      text-align: center;
+      color: #828EAD;
+      text-align: center;
+    }
+  }
+  .bottomBrand {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+
+    .logo {
+      width: 124px;
+      & > path {
+        fill: red;
+      }
+    }
+
+    .text {
+      font-family: Gotham;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 16px;
+      text-align: left;
+      color: #8F9BB3;
+    }
+  }
+}
