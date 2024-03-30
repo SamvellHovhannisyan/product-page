@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import {
   Box,
   Breadcrumbs,
@@ -20,10 +21,8 @@ import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import CurrencyRubleIcon from '@mui/icons-material/CurrencyRuble';
 import Switch from '@mui/material/Switch';
-import { styled } from '@mui/material/styles';
 
-import { useState } from 'react';
-import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted';
+import { styled } from '@mui/material/styles';
 
 const IOSSwitch = styled((props) => (
   <Switch focusVisibleClassName=".Mui-focusVisible" disableRipple {...props} />
@@ -100,6 +99,7 @@ const IMAGES = [
     name: 'product_image_5',
   },
 ];
+
 const ProductLayout = () => {
   const [activeImage, setActiveImage] = useState(IMAGES[0]);
   const [isInCart, setIsInCart] = useState(false);
@@ -117,6 +117,7 @@ const ProductLayout = () => {
       scrollContainer.scrollBy({ left: 100, behavior: 'smooth' });
     }
   };
+
   return (
     <Box className={styles.layout}>
       <Breadcrumbs separator="/" aria-label="breadcrumb" className={styles.breadcrumbs}>
@@ -149,7 +150,7 @@ const ProductLayout = () => {
               </Button>
               <ScrollContainer className="scroll-container" mouseScroll={{ buttons: [1] }}>
                 <Box className={styles.slider}>
-                  {IMAGES.map((item, index) => (
+                  {IMAGES.map((item) => (
                     <Box
                       key={item.id}
                       className={styles.sliderImage}
@@ -322,4 +323,5 @@ const ProductLayout = () => {
     </Box>
   );
 };
+
 export default ProductLayout;

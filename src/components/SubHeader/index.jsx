@@ -1,5 +1,6 @@
 import { Box, Button, Typography } from '@mui/material';
 import styles from './SubHeader.module.scss';
+
 const LEFT_CHAPTERS = [
   {
     name: 'Мои заказы',
@@ -14,6 +15,7 @@ const LEFT_CHAPTERS = [
     name: 'Обращения',
   },
 ];
+
 const SubHeader = () => (
   <Box className={styles.subheader}>
     <Box className={styles.sideBlock}>
@@ -39,4 +41,5 @@ const SubHeader = () => (
     </Box>
   </Box>
 );
+
 export default SubHeader;

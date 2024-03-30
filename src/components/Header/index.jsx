@@ -52,6 +52,7 @@ const StyledMenu = styled((props) => (
     },
   },
 }));
+
 const Header = () => {
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
@@ -151,4 +152,5 @@ const Header = () => {
     </Box>
   );
 };
+
 export default Header;

@@ -1,6 +1,5 @@
 import { Box, Button, Divider, Grid, Typography } from '@mui/material';
 import styles from './Footer.module.scss';
-import CurrencyRubleIcon from '@mui/icons-material/CurrencyRuble';
 
 const Footer = () => {
   return (
@@ -120,4 +119,5 @@ const Footer = () => {
     </Box>
   );
 };
+
 export default Footer;
